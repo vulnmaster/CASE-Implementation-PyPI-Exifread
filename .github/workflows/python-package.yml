@@ -33,7 +33,7 @@ jobs:
         . development/bin/activate
         python -m pip install --upgrade pip setuptools wheel
         python -m pip install flake8 pylint pytest rdflib
-        python setup.py install
+        python -m pip install .
         exifread2case --help
 
     - name: Lint with flake8
